@@ -1,0 +1,1 @@
+-- Ficheiro com lista de funções usando as estruturas condicionais da linguagem haskell
