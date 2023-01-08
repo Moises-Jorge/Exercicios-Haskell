@@ -14,3 +14,10 @@ raizEq2grau a b c | delta == 0 = 1 -- Tem apenas uma raiz (pq as duas têm o mes
                   | otherwise = 0  -- Não tem raizes
     where
         delta = b^2 - 4*a*c
+
+-- Funcao que calcula a area de um cinlindro. Sendo que a area eh dada por: AC = 2*areaBase + areaLado; areaBase = pi * raio^2; areaLado = 2*pi * raio * altura
+areaCilindro :: Float -> Float -> Float
+areaCilindro raio altura = 2*areaBase + areaLado
+    where
+        areaBase = pi * raio^2
+        areaLado = 2*pi * raio * altura
