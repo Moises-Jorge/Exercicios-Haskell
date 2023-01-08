@@ -1,4 +1,4 @@
--- Ficheiro com lista de funções usando as estruturas condicionais da linguagem haskell
+-- Ficheiro com lista de funções usando as ESTRUTURAS CONDICIONAIS da linguagem haskell
 
 -- USANDO A FORMA TRADICIONAL de se aplicar condições: "if then else"
 
