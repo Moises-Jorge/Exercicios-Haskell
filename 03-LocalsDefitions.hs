@@ -21,3 +21,6 @@ areaCilindro raio altura = 2*areaBase + areaLado
     where
         areaBase = pi * raio^2
         areaLado = 2*pi * raio * altura
+
+
+-- DAQUI PARA FRENTE VAMOS USAR A CLAUSULA "let e in"
