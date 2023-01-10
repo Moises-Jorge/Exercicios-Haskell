@@ -24,3 +24,14 @@ areaCilindro raio altura = 2*areaBase + areaLado
 
 
 -- DAQUI PARA FRENTE VAMOS USAR A CLAUSULA "let e in"
+-- Replicando a função "areaHeron"
+areaHeron2 :: Float -> Float -> Float -> Float
+areaHeron2 a b c = let s = (a + b + c) / 2
+                   in sqrt(s * (s - a) * (s - b) * (s - c)) 
+
+-- Replicando a função "areaCilindro"
+areaCilindro2 :: Float -> Float -> Float
+areaCilindro2 raio altura =
+    let areaBase = pi * raio^2
+        areaLado = 2*pi * raio * altura
+    in 2*areaBase + areaLado
