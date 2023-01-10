@@ -27,3 +27,9 @@ fibonacci n
     | n == 0 = 0
     | n == 1 || n == 2 = 1
     | n > 2 = fibonacci (n - 2) + fibonacci (n - 1)
+
+-- 5º: Função que faz a soma sequêncial de um número. Recebe um número e faz a soma de todos os números que estão no intervalo entre ele e zero [n; 0]
+somaSeq :: Int -> Int
+somaSeq n
+    | n == 0 = 0
+    | n > 0 = n + somaSeq (n - 1)
