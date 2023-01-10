@@ -13,3 +13,17 @@ factorial n
     | n == 0 || n == 1 = 1
     | n > 1 = n * factorial (n-1)
     | otherwise = -1 -- Não existe factorial de um número negativo
+
+-- 3º: Função que recebe dois numeros e realiza a multiplicacao entre eles sem usar o sinal de multiplicacao(*), usar soma sucessivas.
+multSoma :: Int -> Int -> Int
+multSoma a b
+    | b == 0 = 0
+    | b == 1 = a
+    | b > 1 = a + multSoma a (b - 1)
+
+-- 4º: Função que calcula o "n" termo da sequencia de fibonacci
+fibonacci :: Int -> Int
+fibonacci n
+    | n == 0 = 0
+    | n == 1 || n == 2 = 1
+    | n > 2 = fibonacci (n - 2) + fibonacci (n - 1)
