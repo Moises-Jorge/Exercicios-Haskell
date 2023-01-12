@@ -35,3 +35,10 @@ menorDaLista [] = -404
 menorDaLista (cab : cauda)
     | cab <= menorDaLista cauda = cab
     | otherwise = menorDaLista cauda
+
+-- 6º: Função que recebe duas listas como parametro e retorna outra lista com os elementos das duas listas
+juntaLista :: [a] -> [a] -> [a]
+juntaLista [] [] = [] -- Se receber duas listas vazias, retorna uma lista vazia (ja que nao tem nada para juntar)
+juntaLista (c : co) [] = (c : co) -- Se recebe uma lista que contem elementos e outra vazia, 
+juntaLista [] (x : xs) = (x : xs)
+juntaLista (c : co) (x : xs) = (c : co) ++ (x : xs)
