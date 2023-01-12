@@ -24,7 +24,14 @@ existeChar (cab : cauda) ch
 
 -- 5º: Função que retorna o maior valor de uma lista de inteiros
 maiorDaLista :: [Int] -> Int
-maiorDaLista [] = -1 -- Pode ser qualquer valor desde que se refira a uma lista vazia, pois cada numero pode representar um numero da lista
+maiorDaLista [] = -404 -- Pode ser qualquer valor desde que se refira a uma lista vazia, pois cada numero pode representar um numero da lista
 maiorDaLista (cab : cauda)
     | cab >= maiorDaLista cauda = cab
     | otherwise = maiorDaLista cauda
+
+-- 6º: Função que retorna o menor valor de uma lista de inteiros (o inverso da função anterior)
+menorDaLista :: [Int] -> Int
+menorDaLista [] = -404
+menorDaLista (cab : cauda)
+    | cab <= menorDaLista cauda = cab
+    | otherwise = menorDaLista cauda
