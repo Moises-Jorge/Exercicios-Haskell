@@ -29,3 +29,6 @@ isEquals (c : co) (x : xs)
 -}
 inverteLista :: [x] -> [x]
 inverteLista [] = []
+inverteLista (c : co) = inverteLista co ++ [c]
+
+{- Aula 14: Exercicios com Listas-}
