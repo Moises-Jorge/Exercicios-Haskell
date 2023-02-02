@@ -31,4 +31,27 @@ inverteLista :: [x] -> [x]
 inverteLista [] = []
 inverteLista (c : co) = inverteLista co ++ [c]
 
-{- Aula 14: Exercicios com Listas-}
+{- Aula 14: Exercicios com Listas
+    Criar 3 funções:
+    1 - Uma que verifica se um determinado elemento pertence ou não na lista
+    2 - Uma para achar o mair elemento de uma lista
+    3 - Uma que verifica se todos os números de uma lista são pares
+-}
+pertence :: [Int] -> Int -> Bool
+pertence [] _ = False
+pertence (x : xs) elem
+    | x == elem = True
+    | otherwise = pertence xs elem
+
+maior :: [Int] -> Int
+maior [] = 0
+maior [x] = x
+maior (x : xs)
+    | x >= maior xs = x
+    | otherwise = maior xs
+
+todosPares :: [Int] -> Bool
+todosPares [] = True
+todosPares (x : xs)
+    | mod x 2 /= 0 = False
+    | otherwise = todosPares xs
