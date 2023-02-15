@@ -1,0 +1,1 @@
+-- Resolução da primeira prova parcelar da discipliana de Programação Não Procedimental do ano académico 2022/2023
